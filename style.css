@@ -1,0 +1,68 @@
+/* GLOBALL SETTINGS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --body-bg-color: #FFEDD5;
+    --sub-bg-color: #FED7AA;
+    --title-higlight-color: #995000;
+
+    font-size: 62.5%;
+}
+
+body{
+    background-color: var(--body-bg-color);
+}
+
+ul{
+    list-style: none;
+}
+
+/* HEADER */
+header{
+    text-align: center;
+    padding: 3.2rem 0;
+}
+
+header, section{
+    max-width: 30rem;
+    margin: 0 auto;
+}
+
+header h1{
+    margin-bottom: .4rem;
+}
+
+header h1 span{
+    color: var(--title-higlight-color);
+}
+
+/* SECTION */
+section{
+    margin-bottom: 2.4rem;
+}
+
+section h2{
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 2.4rem;
+    padding: .8rem 1.6rem;
+    background-color: var(--sub-bg-color);
+}
+
+ul li{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.6rem;
+}
+
+li .details{
+    max-width: 24rem;
+}
+
+.details h3{
+    margin-bottom: .8rem;
+}
