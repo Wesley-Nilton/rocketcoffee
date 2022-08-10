@@ -9,12 +9,28 @@
     --body-bg-color: #FFEDD5;
     --sub-bg-color: #FED7AA;
     --title-higlight-color: #995000;
+    --text-color: #2D2C2A;
+
+    --primary-font: 'Roboto', sans-serif;
+    --secondary-font: 'Roboto Serif', serif;
 
     font-size: 62.5%;
 }
 
 body{
+    font-family: var(--primary-font);
     background-color: var(--body-bg-color);
+}
+
+h1, h2, h3, .price{
+    color: var(--text-color);
+    font-family: var(--secondary-font);
+    text-transform: uppercase;
+}
+
+h3, .price{
+    font-size: 1.6rem;
+    line-height: 1.9rem;
 }
 
 ul{
@@ -33,11 +49,19 @@ header, section{
 }
 
 header h1{
+    font-size: 2.8rem;
+    line-height: 3.3rem;
     margin-bottom: .4rem;
 }
 
 header h1 span{
     color: var(--title-higlight-color);
+}
+
+header p{
+    color: #000000b3;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
 }
 
 /* SECTION */
@@ -46,8 +70,9 @@ section{
 }
 
 section h2{
+    font-size: 1.8rem;
     text-align: center;
-    text-transform: uppercase;
+    line-height: 2.1rem;
     margin-bottom: 2.4rem;
     padding: .8rem 1.6rem;
     background-color: var(--sub-bg-color);
@@ -65,4 +90,10 @@ li .details{
 
 .details h3{
     margin-bottom: .8rem;
+}
+
+.details p{
+    color: #000000b3;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
 }
